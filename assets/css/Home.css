@@ -1,0 +1,168 @@
+
+.home {
+    position: relative;
+}
+
+.home > img {
+    width: 100%;
+}
+
+.home > article {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        color: blue;
+    }
+    to {
+        color: black;
+    }
+}
+
+.home > nav {
+    height: max-content;
+    border-radius: 10px;
+    background: rgba(101, 98, 98, 0.5);
+    position: fixed;
+    right: 10px;
+    top: 200px;
+    /*top: 0;*/
+    bottom: 0;
+    margin: 0;
+    z-index: 2;
+    transition: all 1s;
+}
+/*      Hide And Load       */
+/*
+.hide {
+    opacity: 0;
+    left: -100%;
+}
+
+.show {
+    opacity: 1;
+    left: 0;
+}
+*/
+
+/*      Hide And Load       */
+
+.home > nav > ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.home > nav > ul > li {
+    margin: 10px;
+}
+
+.home > nav > ul > li > a > i {
+    color: red;
+    padding-top: 5px;
+}
+
+.home > nav > ul > li > a > i:hover {
+    color: white;
+}
+
+@media all and (max-width: 320px) {
+    .home > article {
+        font-size: 15px;
+        top: 80px;
+    }
+}
+
+@media all and (min-width: 320px)and (max-width: 375px) {
+    .home > article {
+        font-size: 15px;
+        top: 80px;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+    .home > article {
+        font-size: 20px;
+        top: 80px;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+    .home > article {
+        font-size: 25px;
+        top: 80px;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 768px) {
+    .home > article {
+        font-size: 30px;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    .home {
+        position: relative;
+    }
+
+    .home > img {
+        width: 100%;
+    }
+
+    .home > article {
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        top: 0;
+        bottom: 100px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: auto;
+        font-size: 40px;
+    }
+
+    .home > nav {
+        height: max-content;
+        border-radius: 10px;
+        background: rgba(101, 98, 98, 0.5);
+        position: fixed;
+        right: 10px;
+        top: 200px;
+        /*top: 0;*/
+        bottom: 0;
+        margin: 0;
+        z-index: 2;
+    }
+
+    .home > nav > ul {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .home > nav > ul > li {
+        margin: 10px;
+    }
+
+    .home > nav > ul > li > a > i {
+        color: red;
+        padding-top: 5px;
+    }
+
+}
+
+
